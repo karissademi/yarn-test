@@ -1,0 +1,10 @@
+{
+  "name": "yarn-test",
+  "version": ".001",
+  "description": "Me, figuring out yarn",
+  "main": "index.html",
+  "license": "MIT",
+  "dependencies": {
+    "mustache.js": "^1.0.0"
+  }
+}
