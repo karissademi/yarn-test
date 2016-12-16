@@ -5,6 +5,12 @@
   "main": "index.html",
   "license": "MIT",
   "dependencies": {
-    "mustache.js": "^1.0.0"
+    "autoprefixer": "^6.5.4",
+    "foundation-sites": "^6.3.0",
+    "postcss": "^5.2.6",
+    "postcss-cli": "^2.6.0"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.18.5"
   }
 }
