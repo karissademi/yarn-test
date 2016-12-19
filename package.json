@@ -12,6 +12,10 @@
     "tachyons": "^4.6.1"
   },
   "devDependencies": {
-    "browser-sync": "^2.18.5"
+    "browser-sync": "^2.18.5",
+    "local-web-server": "^1.2.6"
+  },
+  "scripts":{
+    "start" : "yarn ws"
   }
 }
