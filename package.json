@@ -6,16 +6,20 @@
   "license": "MIT",
   "dependencies": {
     "autoprefixer": "^6.5.4",
+    "foundation-cli": "^2.1.0",
     "foundation-sites": "^6.3.0",
-    "postcss": "^5.2.6",
+    "jekyll": "^3.0.0-beta1",
     "postcss-cli": "^2.6.0",
+    "rimraf": "^2.5.4",
+    "sass": "^0.5.0",
     "tachyons": "^4.6.1"
   },
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "local-web-server": "^1.2.6"
   },
-  "scripts":{
-    "start" : "yarn ws"
+  "scripts": {
+    "build": "postcss --use autoprefixer -o main.css css/*.css",
+    "start": "jekyll build"
   }
 }
