@@ -1,6 +1,0 @@
-[submodule "yarn-test"]
-	path = yarn-test
-	url = https://github.com/karissademi/yarn-test.git
-[submodule "build"]
-	path = build
-	url = https://github.com/karissademi/yarn-test.git
