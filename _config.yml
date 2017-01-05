@@ -2,3 +2,4 @@
 title:               "Yarn/Jekyll Test"
 url:                 https://karissademi.github.io/yarn-test/
 destination:        _site
+exclude:            [node_modules]
