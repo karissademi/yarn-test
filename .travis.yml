@@ -10,10 +10,10 @@ before_install:
 - rvm install ruby-2.2.5
 - gem install bundler
 - bundle install
-install: gem install jekyll html-proofer github-pages
+install: gem install jekyll
 before_script:
 - chmod +x ./script/deploy-gh.sh
-script: bundle exec jekyll build && htmlproofer ./_site
+script: jekyll build ./_site
 after_success:
 - "./script/deploy-gh.sh"
 env:
