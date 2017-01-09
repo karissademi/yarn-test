@@ -1,8 +1,0 @@
-node_modules/
-npm-debug.log
-_site
-.jekyll-metadata
-Gemfile.lock
-
-id_rsa
-id_rsa.pub
