@@ -4,7 +4,7 @@ rvm:
 branches:
   except:
   - gh-pages
-script: jekyll build
+script: jekyll build ./_site
 before_install:
 - openssl aes-256-cbc -K $encrypted_f53b1ef3be1c_key -iv $encrypted_f53b1ef3be1c_iv
   -in id_rsa.enc -out id_rsa -d
