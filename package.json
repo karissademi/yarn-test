@@ -16,12 +16,12 @@
   "devDependencies": {
     "browser-sync": "^2.18.5",
     "gh-pages-travis": "^1.0.0",
-    "jekyll": "^3.0.0-beta1",
     "local-web-server": "^1.2.6"
   },
   "scripts": {
+    "jekyll": "^3.0.0-beta1",
     "gh-pages-travis": "gh-pages-travis",
     "build": "postcss --use autoprefixer -o main.css css/*.css",
-    "start": "jekyll build"
+    "start": "jekyll build  --source ./dev"
   }
 }

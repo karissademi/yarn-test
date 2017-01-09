@@ -22,4 +22,4 @@ env:
   - GIT_NAME="Karissa Demi"
   - GIT_EMAIL="k@karissademi.com"
   - DEPLOY_BRANCH="master"
-  - SOURCE_DIR="./"
+  - SOURCE_DIR="./dev"
