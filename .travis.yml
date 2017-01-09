@@ -1,14 +1,18 @@
-language: ruby
-rvm:
-  - 2.2.5
+language: node_js
+node_js:
+  - "6"
 branches:
   except:
   - gh-pages
-install: gem install jekyll html-proofer github-pages
-script: bundle exec jekyll build && htmlproofer ./_site
+#install from here, instead of from Gemfile
 before_install:
 - openssl aes-256-cbc -K $encrypted_f53b1ef3be1c_key -iv $encrypted_f53b1ef3be1c_iv
   -in id_rsa.enc -out id_rsa -d
+  - rvm use 2.2.5
+  - gem install bundler
+  - bundle install
+install: gem install jekyll html-proofer github-pages
+script: bundle exec jekyll build && htmlproofer ./_site
 after_sucess:
   - npm run gh-pages-travis
 env:
