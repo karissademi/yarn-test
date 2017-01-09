@@ -12,8 +12,8 @@ before_install:
   - gem install bundler
   - bundle install
 
-install: gem install jekyll html-proofer github-pages
-script: bundle exec jekyll build && htmlproofer ./_site && npm install
+install: gem install jekyll html-proofer github-pages && npm install gh-pages-travis
+script: bundle exec jekyll build && htmlproofer ./_site
 
 after_success:
   - npm run gh-pages-travis
