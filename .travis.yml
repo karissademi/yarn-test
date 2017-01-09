@@ -1,6 +1,6 @@
 language: generic
 rvm:
-  - 2.2
+  - 2.2.5
 branches:
   except:
   - gh-pages
