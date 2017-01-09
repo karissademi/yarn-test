@@ -19,7 +19,7 @@ before_script:
 script: bundle exec jekyll build && htmlproofer ./_site
 
 after_success:
-  - ./deploy-gh.sh
+  - ./script/deploy-gh.sh
 env:
   global:
     - SSH_KEY="id_rsa"
