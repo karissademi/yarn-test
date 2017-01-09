@@ -4,6 +4,7 @@ rvm:
 branches:
   except:
   - gh-pages
+script: jekyll build
 before_install:
 - openssl aes-256-cbc -K $encrypted_f53b1ef3be1c_key -iv $encrypted_f53b1ef3be1c_iv
   -in id_rsa.enc -out id_rsa -d
@@ -15,3 +16,4 @@ env:
     - GIT_NAME="Karissa Demi"
     - GIT_EMAIL="k@karissademi.com"
     - DEPLOY_BRANCH="master"
+    - SOURCE_DIR="./"
